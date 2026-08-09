@@ -1,0 +1,7 @@
+{
+  "service": "sync-agent",
+  "environment": "production",
+  "error_type": "unknown",
+  "message": "Process terminated unexpectedly. Exit code 137.",
+  "logs": "2026-08-07T03:12:00Z sync-agent | Process terminated. Exit code 137."
+}

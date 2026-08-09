@@ -1,0 +1,7 @@
+{
+  "service": "shipping-integration",
+  "environment": "production",
+  "error_type": "configuration_error",
+  "message": "Third-party shipping API returning 410 Gone for all requests",
+  "logs": "2026-08-06T16:00:00Z shipping-integration | Sending rate request to https://api.carrierco.com/v1/rates\n2026-08-06T16:00:01Z shipping-integration | Response: 410 Gone\n2026-08-06T16:00:01Z shipping-integration | Response body: {\"error\": \"API v1 was deprecated and removed on 2026-06-01. Please migrate to v2.\"}\n2026-08-06T16:00:01Z shipping-integration | Retrying request...\n2026-08-06T16:00:02Z shipping-integration | Response: 410 Gone\n2026-08-06T16:00:02Z shipping-integration | Max retries exceeded, falling back to cached rates"
+}

@@ -1,0 +1,7 @@
+{
+  "service": "orders-api",
+  "environment": "staging",
+  "error_type": "container_start_failure",
+  "message": "Container exited with code 1 immediately after start",
+  "logs": "2026-07-22T09:14:02Z orders-api | Traceback (most recent call last):\n2026-07-22T09:14:02Z orders-api |   File \"/app/main.py\", line 8, in <module>\n2026-07-22T09:14:02Z orders-api |     import psycopg2\n2026-07-22T09:14:02Z orders-api | ModuleNotFoundError: No module named 'psycopg2'\n2026-07-22T09:14:02Z orders-api | exited with code 1"
+}

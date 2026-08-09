@@ -1,0 +1,7 @@
+{
+  "service": "order-api",
+  "environment": "production",
+  "error_type": "application_error",
+  "message": "Order creation requests timing out and failing",
+  "logs": "2026-08-07T12:00:00Z order-api | POST /orders received, cart_id=55210\n2026-08-07T12:00:00Z order-api | Calling inventory-service to reserve stock: POST http://inventory-service:8090/reserve\n2026-08-07T12:00:15Z order-api | Request to inventory-service timed out after 15000ms\n2026-08-07T12:00:15Z order-api | Order creation failed: dependency timeout\n2026-08-07T12:00:20Z order-api | POST /orders received, cart_id=55211\n2026-08-07T12:00:35Z order-api | Request to inventory-service timed out after 15000ms\n2026-08-07T12:00:35Z order-api | Order creation failed: dependency timeout\n2026-08-07T12:00:36Z order-api | Note: inventory-service health check has been failing since 11:58, separate alert already fired for inventory-service"
+}

@@ -1,0 +1,7 @@
+{
+  "service": "reporting-worker",
+  "environment": "production",
+  "error_type": "out_of_memory",
+  "message": "Container killed: out of memory (OOM)",
+  "logs": "2026-08-06T22:10:00Z reporting-worker | Worker started, processing report queue\n2026-08-06T22:15:32Z reporting-worker | Processed report batch 1042, memory usage: 340MB\n2026-08-06T22:45:11Z reporting-worker | Processed report batch 1198, memory usage: 610MB\n2026-08-06T23:20:47Z reporting-worker | Processed report batch 1355, memory usage: 890MB\n2026-08-06T23:58:03Z reporting-worker | Processed report batch 1509, memory usage: 1210MB\n2026-08-07T00:31:19Z reporting-worker | Processed report batch 1662, memory usage: 1480MB\n2026-08-07T00:47:02Z reporting-worker | OOM killer invoked, container exceeded memory limit (1536MB)\n2026-08-07T00:47:02Z reporting-worker | Note: worker opens one database connection per report batch via psycopg2.connect() and does not appear to close it after use\n2026-08-07T00:47:02Z reporting-worker | Container killed with exit code 137"
+}

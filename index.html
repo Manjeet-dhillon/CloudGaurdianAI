@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CloudGuardian AI — Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">
+    <div class="logo-mark">CG</div>
+    <div class="logo-text">Cloud<span class="accent">Guardian</span> AI</div>
+  </div>
+  <div class="status-pill">
+    <div class="dot" id="statusDot"></div>
+    <span id="statusText">Connecting...</span>
+  </div>
+</nav>
+
+<div class="subheader">
+  <h1>Live remediation feed</h1>
+  <p>Advisory system — suggests a fix, does not apply anything. You decide.</p>
+  <div class="howto">
+    Trigger a real webhook from another terminal to see it appear here automatically:<br>
+    <code>curl -X POST http://127.0.0.1:5000/webhook -H "Content-Type: application/json" -d @sample_error.json</code>
+  </div>
+</div>
+
+<div class="feed-wrap">
+  <div id="feed">
+    <div class="empty-state" id="emptyState">No errors received yet.</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

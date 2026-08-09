@@ -1,0 +1,7 @@
+{
+  "service": "payments-api",
+  "environment": "staging",
+  "error_type": "configuration_error",
+  "message": "Application failed to connect to database on startup",
+  "logs": "2026-08-07T10:02:11Z payments-api | Starting application...\n2026-08-07T10:02:11Z payments-api | Loading configuration from environment\n2026-08-07T10:02:12Z payments-api | Connecting to database at DB_HOST=undefined:5432\n2026-08-07T10:02:12Z payments-api | Error: getaddrinfo ENOTFOUND undefined\n2026-08-07T10:02:12Z payments-api | Connection failed after 3 retries\n2026-08-07T10:02:12Z payments-api | Process exited with code 1"
+}

@@ -1,0 +1,7 @@
+{
+  "service": "notification-service",
+  "environment": "production",
+  "error_type": "container_deployment_failure",
+  "message": "Container failed to bind to port during deployment",
+  "logs": "2026-08-07T14:20:03Z notification-service | Starting server on port 8080\n2026-08-07T14:20:03Z notification-service | Error: listen EADDRINUSE: address already in use 0.0.0.0:8080\n2026-08-07T14:20:03Z notification-service |     at Server.setupListenHandle\n2026-08-07T14:20:03Z notification-service |     at listenInCluster\n2026-08-07T14:20:03Z notification-service | Container health check failed: connection refused\n2026-08-07T14:20:04Z notification-service | Deployment rolled back to previous version"
+}

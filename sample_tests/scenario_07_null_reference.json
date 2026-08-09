@@ -1,0 +1,7 @@
+{
+  "service": "checkout-api",
+  "environment": "production",
+  "error_type": "application_error",
+  "message": "Unhandled exception during checkout processing",
+  "logs": "2026-08-07T11:05:22Z checkout-api | Processing checkout for cart_id=88213\n2026-08-07T11:05:22Z checkout-api | TypeError: Cannot read properties of undefined (reading 'discountCode')\n2026-08-07T11:05:22Z checkout-api |     at applyDiscount (checkout.js:47)\n2026-08-07T11:05:22Z checkout-api |     at processOrder (checkout.js:112)\n2026-08-07T11:05:22Z checkout-api | Request failed with 500 Internal Server Error\n2026-08-07T11:05:22Z checkout-api | Note: request body for cart_id=88213 did not include a 'promotion' field"
+}

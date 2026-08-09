@@ -1,0 +1,7 @@
+{
+  "service": "data-export-job",
+  "environment": "production",
+  "error_type": "cloud_permission_error",
+  "message": "Export job failed authentication partway through a long-running task",
+  "logs": "2026-08-07T01:00:00Z data-export-job | Starting export job, assumed role via STS at 01:00:00\n2026-08-07T01:00:05Z data-export-job | Exporting table batch 1/40... success\n2026-08-07T01:15:20Z data-export-job | Exporting table batch 22/40... success\n2026-08-07T01:59:58Z data-export-job | Exporting table batch 39/40...\n2026-08-07T02:00:01Z data-export-job | botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutObject operation: The provided token has expired\n2026-08-07T02:00:01Z data-export-job | Note: STS session token was issued with a 1-hour duration at 01:00:00"
+}

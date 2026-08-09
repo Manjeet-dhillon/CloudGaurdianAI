@@ -1,0 +1,7 @@
+{
+  "service": "invoice-generator",
+  "environment": "production",
+  "error_type": "cloud_permission_error",
+  "message": "Access denied when writing generated invoice to storage",
+  "logs": "2026-08-07T09:41:55Z invoice-generator | Generating invoice INV-20260807-0142\n2026-08-07T09:41:56Z invoice-generator | Uploading to s3://company-invoices-prod/2026/08/INV-20260807-0142.pdf\n2026-08-07T09:41:56Z invoice-generator | botocore.exceptions.ClientError: An error occurred (AccessDenied) when calling the PutObject operation: User: arn:aws:sts::123456789012:assumed-role/invoice-generator-role/i-0abc123 is not authorized to perform: s3:PutObject on resource: arn:aws:s3:::company-invoices-prod/2026/08/INV-20260807-0142.pdf because no identity-based policy allows the s3:PutObject action\n2026-08-07T09:41:56Z invoice-generator | Invoice generation failed, retry scheduled"
+}

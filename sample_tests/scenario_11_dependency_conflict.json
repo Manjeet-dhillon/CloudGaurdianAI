@@ -1,0 +1,7 @@
+{
+  "service": "recommendation-engine",
+  "environment": "staging",
+  "error_type": "application_error",
+  "message": "Service fails to start after dependency update",
+  "logs": "2026-08-07T13:30:00Z recommendation-engine | Starting service\n2026-08-07T13:30:01Z recommendation-engine | ImportError: cannot import name 'DataFrameGroupBy' from 'pandas.core.groupby'\n2026-08-07T13:30:01Z recommendation-engine |   File \"/app/engine.py\", line 3, in <module>\n2026-08-07T13:30:01Z recommendation-engine |     from pandas.core.groupby import DataFrameGroupBy\n2026-08-07T13:30:01Z recommendation-engine | Note: requirements.txt pins pandas==1.3.0, but the base image was rebuilt 2026-08-06 and now includes pandas==2.1.0 pre-installed at the OS layer"
+}

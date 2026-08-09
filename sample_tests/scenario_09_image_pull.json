@@ -1,0 +1,7 @@
+{
+  "service": "analytics-pipeline",
+  "environment": "staging",
+  "error_type": "container_deployment_failure",
+  "message": "Deployment failed: unable to pull container image",
+  "logs": "2026-08-07T08:00:00Z deploy | Pulling image registry.internal/analytics-pipeline:v2.4.1\n2026-08-07T08:00:03Z deploy | Error response from daemon: pull access denied for registry.internal/analytics-pipeline, repository does not exist or may require authorization\n2026-08-07T08:00:03Z deploy | Error: unauthorized: authentication required\n2026-08-07T08:00:03Z deploy | Deployment aborted"
+}

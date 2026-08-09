@@ -1,0 +1,7 @@
+{
+  "service": "media-transcoder",
+  "environment": "production",
+  "error_type": "configuration_error",
+  "message": "Service cannot locate its input storage bucket",
+  "logs": "2026-08-07T15:10:00Z media-transcoder | Fetching object from s3://media-uploads-raw/video_4471.mp4\n2026-08-07T15:10:01Z media-transcoder | botocore.exceptions.ClientError: An error occurred (NoSuchBucket) when calling the GetObject operation: The specified bucket does not exist\n2026-08-07T15:10:01Z media-transcoder | Client region: eu-west-2\n2026-08-07T15:10:01Z media-transcoder | Note: bucket media-uploads-raw exists, but was created in region eu-west-1"
+}
