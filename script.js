@@ -3,7 +3,7 @@ const statusText = document.getElementById("statusText");
 const feed = document.getElementById("feed");
 const emptyState = document.getElementById("emptyState");
 
-const RESULTS_URL = "http://127.0.0.1:5000/results";
+const RESULTS_URL = `${window.location.origin}/results`;
 const POLL_INTERVAL_MS = 1500;
 
 let lastSeenId = 0;
@@ -11,7 +11,11 @@ let lastSeenId = 0;
 function parseSuggestion(text) {
   const grab = (label, nextLabels) => {
     const pattern = new RegExp(
-      "\\*\\*" + label + ":\\*\\*\\s*([\\s\\S]*?)(?=\\*\\*(?:" + nextLabels.join("|") + "):\\*\\*|$)"
+      "\\*\\*" +
+        label +
+        ":\\*\\*\\s*([\\s\\S]*?)(?=\\*\\*(?:" +
+        nextLabels.join("|") +
+        "):\\*\\*|$)",
     );
     const match = text.match(pattern);
     return match ? match[1].trim() : "(not provided)";
