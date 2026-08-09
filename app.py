@@ -12,12 +12,28 @@ import json
 import queue
 import time
 import logging
+from flask import send_from_directory
 from flask import Flask, request, jsonify
 from openai import OpenAI
 
 logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
+
+
+@app.route("/")
+def serve_ui():
+    return send_from_directory(".", "index.html")
+
+
+@app.route("/style.css")
+def serve_css():
+    return send_from_directory(".", "style.css")
+
+
+@app.route("/script.js")
+def serve_js():
+    return send_from_directory(".", "script.js")
 
 
 @app.after_request
